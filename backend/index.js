@@ -12,6 +12,15 @@ app.get("/", (req, res) => {
     })
 })
 
+app.post("/", (req, res) => {
+    res.json({
+        success: true,
+        data: {
+            fuck: "fuck you"
+        }
+    })
+})
+
 app.listen(8080, () => {
     console.log("server started on port", 'http://localhost:8080/');
 })
